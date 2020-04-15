@@ -1,0 +1,61 @@
+.profesion-description{
+    width: 100%;
+    background-color: cyan;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.cv_container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+.education{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-cv{
+    width: 300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    animation-name: giro;
+    animation-duration: 4s;
+    animation-delay: .2s;
+    animation-timing-function: ease-in-out;
+
+}
+.cv_container--title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.cv_container--Subtitle{
+    font-size: 20px;
+    margin:20px 0 5px 20px;
+    font-weight: bold;
+}
+dd{
+    margin: 0px 0px 0 25px;
+    font-size: 15px;
+}
+.skills h2{
+    margin: 20px 0px;
+}
+.skills li{
+    margin-left:45px ;
+    font-size: 18px;
+}
+@keyframes giro {
+   from{
+       transform: rotate(0deg);
+   }
+   to{
+        transform: rotate(360deg);
+   }
+}
