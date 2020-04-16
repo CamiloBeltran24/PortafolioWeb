@@ -19,8 +19,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
 }
 .header{
   background-color: var(--green-color);
@@ -56,6 +59,14 @@ body{
 .header .contenedor-menu a:hover{
   color: white;
 }
+
+.icon-menu{
+  display: none;
+}
+.menu{
+  display: none;
+}
+
 .main-container{
   width: 100%;
   max-width: 1000px;
@@ -238,4 +249,66 @@ footer .redes_sociales a{
 }
 .icon-instagram:hover{
   background-color:#405de6 ;
+}
+
+@media screen and (max-width: 768px){
+  .header .contenedor-menu{
+    display: none;
+  }
+  
+  .icon-menu
+    {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 5px;
+        font-size: 1.3em;
+        padding: 10px;
+        background-color:var(--green-color);
+        border-radius: 50%;
+        z-index: 2;
+    }
+  .menu 
+    {
+        display: block;
+        position:fixed;
+        width: 100%;
+        height: 80%;
+        background-color:var(--green-color);
+        opacity: .9;
+        top: 0px;
+        left: 200%;
+        padding: 20px 0;
+        transition: .3s;
+        z-index: 2;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        list-style: none;
+    }
+    .menu ul li 
+    {
+
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .menu ul li a 
+    {
+        font-size: 1.2em;
+        color: white;
+        display:inline-block;
+        width:100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
 }
