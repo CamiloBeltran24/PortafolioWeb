@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contactame.css">
     <link rel="stylesheet" href="css/animation.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Roboto&display=swap"rel="stylesheet">
@@ -14,21 +13,29 @@
 </head>
 <body>
     <!-- Empieza el Header -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    
     <header class="header fadeInDown">
         <h1 class="titulo-header">
             Portafolio Web
         </h1>
-        <i class="icon-menu burger-button" id="burger-menu"></i>
-        <nav class="contenedor-menu">
-            <a href="index.html">Inicio</a>
-            <a href="acercade.html">Acerca de</a>
-            <a href="contactame.html">Contactame</a>
-        </nav>
+        <!-- Menu para Celulares -->
         <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contactame.html">Contactame</a></li>
+            </ul>
+        </nav>
+        <!-- Acaba menu para celulares -->
+    
+        <!-- menu para Laptops y Desktop -->
+        <nav class="menu-laptop">
             <a href="index.html">Inicio</a>
             <a href="acercade.html">Acerca de</a>
             <a href="contactame.html">Contactame</a>
         </nav>
+    
     </header>
     <!-- Aqui acaba el Header -->
 
@@ -53,7 +60,7 @@
 
 
     <!-- Empieza la seccion footer -->
-    <footer class="fadeInUp">
+    <footer class="footer fadeInUp">
         <div class="derechos">
             <p>Todos los derechos reservados</p>
             <p><a href="mailto:cambelf.dev@gmail.com">cambelf.dev@gmail.com</a></p>

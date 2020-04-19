@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
+    z-index: 2;
 }
 .cv_container{
     width: 100%;
@@ -15,7 +16,7 @@
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
 }
-.education{
+.education_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +38,7 @@
 }
 .cv_container--Subtitle{
     font-size: 20px;
-    margin:20px 0 5px 20px;
+    margin:20px 0 5px 15px;
     font-weight: bold;
 }
 dd{

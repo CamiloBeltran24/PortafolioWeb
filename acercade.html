@@ -1,53 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/acerdade.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Curriculum</title>
 </head>
 <body>
+    <!-- inicio del header -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    
     <header class="header fadeInDown">
         <h1 class="titulo-header">
             Portafolio Web
         </h1>
-        <i class="icon-menu burger-button" id="burger-menu"></i>
-        <nav class="contenedor-menu">
-            <a href="index.html">Inicio</a>
-            <a href="acerca_de.html">Acerca de</a>
-            <a href="contactame.html">Contactame</a>
-        </nav>
+        <!-- Menu para Celulares -->
         <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contactame.html">Contactame</a></li>
+            </ul>
+        </nav>
+        <!-- Acaba menu para celulares -->
+    
+        <!-- menu para Laptops y Desktop -->
+        <nav class="menu-laptop">
             <a href="index.html">Inicio</a>
             <a href="acercade.html">Acerca de</a>
             <a href="contactame.html">Contactame</a>
         </nav>
+    
     </header>
+    <!-- Aqui acaba el Header -->
+
+<!-- seccion de descripcion de la profesion -->
     <div class="profesion-description fadeInDown">
         <p>
             Diseñador / Desarrollador web front-end
         </p>
     </div>
+<!-- Finaliza seccion de la descripcion de profesion -->
+
 
     <!-- Empieza seccion principal  -->
 
     <section class="cv_container fadeIn">
         <h2 class="cv_container--title">Educaci&oacuten</h2>
-       <div class="education">
-           <dl>
-               <dt class="cv_container--Subtitle">Ingenieria de sistemas</dt>
-               <dd>En Proceso / Universidad Nacional Abierta y a distancia</dd>
+      <div class="education_container">
+        <div class="education">
+            <dl>
+                <dt class="cv_container--Subtitle">Ingenier&iacutea de sistemas</dt>
+                <dd>En Proceso / Universidad Nacional Abierta y a distancia</dd>
+        
+                <dt class="cv_container--Subtitle">Frontend Developer</dt>
+                <dd>2019 / Platzi, CodigoFacilito, Udemy</dd>
+            </dl>
+        </div>
+        <img class="img-cv" src="img/fotoCv.JPG" alt="foto de christian camilo">
+      </div>
 
-               <dt class="cv_container--Subtitle">Frontend Developer</dt>
-               <dd>2019 / Platzi, CodigoFacilito, Udemy</dd>
-           </dl>
-           <img class="img-cv" src="img/fotoCv.JPG" alt="foto de christian camilo">
-       </div>
        <div class="experience">
            <h2 class="cv_container--title">Experiencia profesinal</h2>
            <dl>
@@ -72,9 +88,11 @@
            </ol>
        </div>
     </section>
+<!-- Finaliza seccion principal -->
 
+<!-- Empieza el Footer -->
 
-    <footer>
+    <footer class="footer fadeInUp">
 
         <div class="derechos">
             <p>Todos los derechos reservados</p>
@@ -90,6 +108,8 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <!-- Finaliza el footer -->
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

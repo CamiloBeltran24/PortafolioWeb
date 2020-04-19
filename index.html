@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animation.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/animation.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Roboto&display=swap" rel="stylesheet">
   <title>Christian Camilo Beltran - Portafolio</title>
 </head>
 <body>
   <!-- Empieza el Header -->
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+
     <header class="header fadeInDown">
       <h1 class="titulo-header">
         Portafolio Web
       </h1>
-     
-      <nav class="contenedor-menu">
-          <a href="index.html">Inicio</a>
-          <a href="acercade.html">Acerca de</a>
-          <a href="contactame.html">Contactame</a>
-      </nav>
+      <!-- Menu para Celulares -->
       <nav class="menu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -30,163 +25,186 @@
           <li><a href="contactame.html">Contactame</a></li>
         </ul>
       </nav>
-      <i class="icon-menu burger-button" id="burger-menu"></i>
+      <!-- Acaba menu para celulares -->
+
+      <!-- menu para Laptops y Desktop -->
+      <nav class="menu-laptop">
+          <a href="index.html">Inicio</a>
+          <a href="acercade.html">Acerca de</a>
+          <a href="contactame.html">Contactame</a>
+      </nav>
+      
     </header>
   <!-- Aqui acaba el Header -->
+<!-- div con descripcion de profesion -->
+  <div class="profesionDescription fadeInDown">
+    <p>
+      Diseñador / Desarrollador web front-end
+    </p>
+  </div>
+  <!-- Finaliza div con descripcion de profesion -->
+
+  <!-- Empieza seccion presentacion -->
+  <section class="presentation-container fadeInDown">
+    <div class="presentation">
+      <p>
+        Hola !, soy Christian Camilo Beltran Fonseca, <span>Diseñador / Desarrollador Front-end, entusiasta del desarrollo web, nuevas
+        tecnologías</span> y estudiante de ingenier&iacutea de sistemas.
+      </p>
+      <img class="foto-perfil" src="./img/fotoCv.JPG" alt="Foto Christian Camilo Beltran">
+    </div>
+  </section>
+<!-- Finaliza seccion de presentacion -->
 
 
-  <!-- Empíeza el Main -->
-    <div class="main-container">
-
-        <!-- Seccion de presentacion personal -->
-      <section class="presentacion fadeInDown">
-        <p>
-          Hola!, Soy Christian Camilo,<span> Diseñador Web, Entuciasta del Desarrollo Frontend</span> y estudiante de ingenieria de sistemas.
-        </p>
-        <img class="foto-principal" src="img/fotoCv.JPG" alt="Christian Camilo">
-      </section>
-        <!-- acaba seccion de presentacio personal -->
+<!-- Empieza Seccion de trabajos -->
+<section class="trabajos fadeIn">
+  <h2> Mis Trabajos</h2>
+  <div class="trabajos-container">
+    <div class="trabajo">
+      <img src="./img/canvas1.png" alt="Imagen de proyecto">
+      <p>
+        Dibujos con canvas
+      </p>
+      <small>HTML-CSS-JavaScript</small>
+      <a href="#">Visitar</a>
     </div>
 
+    <div class="trabajo">
+      <img src="./img/capturabrands.png" alt="imagen del trabajo">
+      <p>
+        Layout Tienda Para Mascotas
+      </p>
+      <small>HTML-CSS-JavaScript</small>
+      <a href="#">Visitar</a>
+    </div>
 
-        <!-- Emṕieza seccion proyectos -->
-    <section class="proyectos fadeIn">
-      <div class="main-container">
-        <h2>
-          Proyectos Propios
-        </h2>
-        
-        <div class="contenedor-proyectos grid-container fadeInUp">
+    <div class="trabajo">
+      <img src="./img/peso_otros_planetas.png" alt="imagen del trabajo">
+      <p>
+       Tu peso en otros planetas 
+      </p>
+      <small>HTML-CSS-JavaScript</small>
+      <a href="#">Visitar</a>
+    </div>
 
+    <div class="trabajo">
+      <img src="./img/LayoutBasica.png" alt="imagen del trabajo">
+      <p>
+        Layout basica
+      </p>
+      <small>HTML-CSS-Responsive</small>
+      <a href="#">Visitar</a>
+    </div>
 
-          <a href="https://camilobeltran24.github.io/PalermoBoceto-1/" class="proyecto item">
-            <img src="img/palermo_logo.jpg" alt="">
-            <div class="descripcion-proyecto">
-              <h3>
-                Palermo empanadas al horno
-              </h3>
-              <p>
-                Producto web diseñado para micro-empresa "Palermo" Ubicada en la ciudad de bogota, esta es una empresa dedicada a la fabricacion y venta de empanadas y productos al horno.
-              </p>
-              <p><small>2019</small></p>
-            </div>
-          </a>
+    <div class="trabajo">
+      <img src="./img/pinterest.png" alt="imagen del trabajo">
+      <p>
+        Layout pinterest
+      </p>
+      <small>HTML-CSS Grid</small>
+      <a href="#">Visitar</a>
+    </div>
 
+    <div class="trabajo">
+      <img src="./img/coffe.png" alt="imagen del trabajo">
+      <p>
+        layout para coffe
+      </p>
+      <small>HTML-CSS-Boostrap</small>
+      <a href="#">Visitar</a>
+    </div>
 
-          <a href="https://camilobeltran24.github.io/Pagina_Brands/" class="proyecto item">
-            <img src="img/capturabrands.png" alt="Imagen de pagina Brands">
-            <div class="descripcion-proyecto">
-              <h3>
-                Brands
-              </h3>
-              <p>
-                Producto web de emprendimiento personal, simula la apariencia de un sitio web de ventas de productos para animales o porducto en general.
-              </p>
-              <p><small>2019</small></p>
-            </div>
-          </a>
+    <div class="trabajo">
+      <img src="./img/galeria-polaroid.png" alt="imagen del trabajo">
+      <p>
+        Galeria polaroid/ animaciones y filtros
+      </p>
+      <small>HTML-CSS- CSS Animaions</small>
+      <a href="#">Visitar</a>
+    </div>
 
+    <div class="trabajo">
+      <img src="./img/galeria-vist-modal.png" alt="imagen del trabajo">
+      <p>
+        Galeria Polaroid con vista modal de imagenes
+      </p>
+      <small>HTML-CSS-JavaScript</small>
+      <a href="#">Visitar</a>
+    </div>
 
-          <a href="#" class="proyecto item">
-            <img src="img/peso_otros_planetas.png" alt="Fotografia Peso en otros planetas">
-            <div class="descripcion-proyecto">
-              <h3>
-                Peso En otro Planeta
-              </h3>
-              <p>
-                Aplicacion web capaz de decir al usuario su peso en algunos de los planetas de nuestro sistema solar.
-              </p>
-              <p><small>2020</small></p>
-            </div>
-          </a>
+    <div class="trabajo">
+      <img src="./img/boceto-portafolio#2.png" alt="imagen del trabajo">
+      <p>
+        Boceto para portafolio web
+      </p>
+      <small>HTML-CSS-Responsive</small>
+      <a href="#">Visitar</a>
+    </div>
 
+    <div class="trabajo">
+      <img src="./img/palermo_logo.jpg" alt="imagen del trabajo">
+      <p>
+        Layout palermo empanadas al horno
+      </p>
+      <small>HTML-CSS</small>
+      <a href="#">Visitar</a>
+    </div>
 
-          <a href="#" class="proyecto item">
-            <img src="img/canvas1.png" alt="">
-            <div class="descripcion-proyecto">
-              <h3>
-                Dibujos en Canvas
-              </h3>
-              <p>
-                Dibujos realizados en canvas combinando HTML, CSS y JavaScript para su correcta visualizacion.
-              </p>
-              <p><small>2019</small></p>
-            </div>
-          </a>
+    <div class="trabajo">
+      <img src="./img/palermo_logo.jpg" alt="imagen del trabajo">
+      <p>
+        Layout palermo empanadas al horno
+      </p>
+      <small>HTML-CSS</small>
+      <a href="#">Visitar</a>
+    </div>
 
+  </div>
+</section>
+<!-- Finaliza Seccion de trabajos -->
 
-          <a href="https://camilobeltran24.github.io/BlogMTB/" class="proyecto item">
-            <img src="img/" alt="">
-            <div class="descripcion-proyecto">
-              <h3>
-                Boceto Blog MTB
-              </h3>
-              <p>
-                Boceto de blog informativo personal, cuyo principal funcion es dar a conocer los sitios de interes de la ciudad de Girardot para realizar Ciclimo de montaña. 
-              </p>
-              <p><small>2019</small></p>
-            </div>
-          </a>
+<!-- Empieza la secciones de clones -->
+<section class="clones fadeIn">
+  <h2>Clones</h2>
+  <div class="clones-container">
+    <div class="clon">
+      <img src="./img/google_clone.png" alt="Imagen de clom">
+      <p>Google clone</p>
+      <a href="">Visitar</a>
+    </div>
 
+    <div class="clon">
+      <img src="./img/Duckduckgo.png" alt="Imagen de clom">
+      <p>Duckduckgo clone</p>
+      <a href="">Visitar</a>
+    </div>
+  </div>
+</section>  
 
-          <a href="https://camilobeltran24.github.io/Pagina_Brands/" class="proyecto item">
-            <img src="img/logoBrands.png" alt="Imagen de pagina Brands">
-            <div class="descripcion-proyecto">
-              <h3>
-                Brands
-              </h3>
-              <p>
-                Producto web de emprendimiento personal, simula la apariencia de un sitio web de ventas de productos para animales o porducto en general.
-              </p>
-              <p><small>2019</small></p>
-            </div>
-          </a>
-        </div>
-        <p><a href="">Conoce mi trabajo...</a></p>
-      </div>
-    </section>
-        <!-- Acaba seccion proyectos -->
-
-
-        <!-- Empieza seccion Replicas -->
-    <section class="proyectos-replicas">
-     
-      <div class="main-container">
-        <h2>Clones</h2>
-        <div class="clones_container fadeInUp">
-          <div class="clone">
-            <img src="img/google_clone.png" alt="">
-            <a href="https://camilobeltran24.github.io/Google_Clone/">Google Clone</a>
-          </div>
-          <div class="clone">
-            <img src="img/Duckduckgo.png" alt="">
-            <a href="https://camilobeltran24.github.io/DuckDuckGo_clone/">DuckDuckGo</a>
-          </div>
-        </div> 
-        <a href="">Conoce mi trabajo...</a>
-    </section>
-        <!-- Acaba el secction Replicas -->
+<!-- Finaliza la seccion de clones -->
 
 
-    <!-- Empieza la seccion footer -->
-    <footer>
-      <div class="derechos">
-        <p>Todos los derechos reservados</p>
-        <p><a href="mailto:cambelf.dev@gmail.com">cambelf.dev@gmail.com</a></p>
-        <small>Diseñado con &#128154; Por Camilo Beltran</small>
-      </div>
-      <div class="redes_sociales">
-        <a href="https://www.linkedin.com/in/camilobeltran24" class="icon-linkedin"></a>
-        <a href="https://github.com/CamiloBeltran24" class="icon-github"></a>
-        <a href="https://www.facebook.com/camilobf#_" class="icon-facebook"></a>
-        <a href="https://twitter.com/CamiloBeltran" class="icon-twitter"></a>
-        <a href="https://www.instagram.com/camilobeltran24/" class="icon-instagram"></a>
-      </div>
-    </footer>
-    <!--  Acaba el footer -->
-    <!-- Acaba el Main -->
 
+<!-- Empieza el Footer -->
 
-    <script src="js/index.js"></script>
+<footer class="footer fadeInUp">
+
+  <div class="derechos">
+    <p>Todos los derechos reservados</p>
+    <p><a href="mailto:cambelf.dev@gmail.com">cambelf.dev@gmail.com</a></p>
+    <small>Diseñado con &#128154; Por Camilo Beltran</small>
+  </div>
+  <div class="redes_sociales">
+    <a target="_blanck" href="https://www.linkedin.com/in/camilobeltran24" class="icon-linkedin"></a>
+    <a target="_blanck" href="https://github.com/CamiloBeltran24" class="icon-github"></a>
+    <a target="_blanck" href="https://www.facebook.com/camilobf#_" class="icon-facebook"></a>
+    <a target="_blanck" href="https://twitter.com/CamiloBeltran" class="icon-twitter"></a>
+    <a target="_blanck" href="https://www.instagram.com/camilobeltran24/" class="icon-instagram"></a>
+  </div>
+</footer>
+
+<!-- Finaliza el footer -->
+  <script src="./js/index.js"></script>
 </body>
 </html>

@@ -1,26 +1,17 @@
  // console.log();
-    const ipad = window.matchMedia('screen and (max-width:768px)');
-    const menu = document.querySelector(".menu");
-    console.log(menu);
-    const burgerButton = document.querySelector("#burger-menu");
-    console.log(burgerButton)
+window.matchMedia('screen and (max-width:767px)');
+const menu = document.querySelector(".menu");
+console.log(menu);
+const burgerButton = document.querySelector("#burger-menu");
+console.log(burgerButton)
+
+burgerButton.addEventListener('click', hideShow);
 
 
-    ipad.addListener(validation)
-
-      function validation(event){
-        if (event.matches){
-        burgerButton.addEventListener('click', hideShow);
-        } else{
-        burgerButton.removeEventListener('click', hideShow);
-        }
-        console.log(event)
-      }
-
-      function hideShow(){
-        if(menu.classList.contains("is-active")){
+function hideShow() {
+    if (menu.classList.contains("is-active")) {
         menu.classList.remove("is-active")
-    } else{
+    } else {
         menu.classList.add("is-active");
-        }
-      }
+    }
+}
